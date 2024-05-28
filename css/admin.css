@@ -1,8 +1,8 @@
-/* 
-    Author: Vijay Thapa;
-    Theme: Food Order Website Admin;
-    Version: 1.0;
-*/
+
+.logo{
+    width: 10%;
+    float: left;
+}
 
 *{
     margin: 0;
@@ -65,14 +65,14 @@ table tr td{
 }
 
 .btn-danger{
-    background-color: #ff6b81;
+    background-color: #e84118;
     padding: 1%;
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 .btn-danger:hover{
-    background-color: #ff4757;
+    background-color: #c23616;
 }
 
 .success{
@@ -97,10 +97,10 @@ table tr td{
 .menu ul li a{
     text-decoration: none;
     font-weight: bold;
-    color: #ff6b81;
+    color: #e84118;
 }
 .menu ul li a:hover{
-    color: #ff4757;
+    color: #c23616;
 }
 
 /* CSS for main-content */
@@ -120,7 +120,7 @@ table tr td{
 
 /* CSS for Footer */
 .footer{
-    background-color: #ff4757;
+    background-color: #c23616;
     color: white;
 }
 

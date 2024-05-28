@@ -4,7 +4,7 @@
 
 
     //Create Constants to Store Non Repeating Values
-    define('SITEURL', 'http://localhost/food-ordering/');
+    define('SITEURL', 'http://localhost/ordering-system/');
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');

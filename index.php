@@ -1,7 +1,7 @@
     <?php include('partials-front/menu.php'); ?>
 
     <!-- fOOD sEARCH Section Starts Here -->
-    <section class="food-search text-center">
+    <!-- <section class="food-search text-center">
         <div class="container">
             
             <form action="<?php echo SITEURL; ?>food-search.php" method="POST">
@@ -10,7 +10,7 @@
             </form>
 
         </div>
-    </section>
+    </section> -->
     <!-- fOOD sEARCH Section Ends Here -->
 
     <?php 
@@ -24,7 +24,7 @@
     <!-- CAtegories Section Starts Here -->
     <section class="categories">
         <div class="container">
-            <h2 class="text-center">Explore Foods</h2>
+            <h2 class="text-center">Products</h2>
 
             <?php 
                 //Create SQL Query to Display CAtegories from Database
@@ -89,7 +89,7 @@
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu">
         <div class="container">
-            <h2 class="text-center">Food Menu</h2>
+            <h2 class="text-center">Goods Menu</h2>
 
             <?php 
             
