@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streat Food Web</title>
+    <title>street Food Web</title>
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
@@ -28,7 +28,7 @@
                         <a href="<?php echo SITEURL; ?>">Home</a>
                     </li>
                     <li>
-                        <a href="<?php echo SITEURL; ?>foods.php">Streat Food</a>
+                        <a href="<?php echo SITEURL; ?>foods.php">street Food</a>
                     </li>
                     <li>
                         <a href="./user/login.php">Login</a>

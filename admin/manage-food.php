@@ -2,12 +2,12 @@
 
 <div class="main-content">
     <div class="wrapper">
-        <h1>Manage Streat Food</h1>
+        <h1>Manage street Food</h1>
 
         <br /><br />
 
                 <!-- Button to Add Admin -->
-                <a href="<?php echo SITEURL; ?>admin/add-food.php" class="btn-primary">Add Streat Food</a>
+                <a href="<?php echo SITEURL; ?>admin/add-food.php" class="btn-primary">Add street Food</a>
 
                 <br /><br /><br />
 
@@ -107,8 +107,8 @@
                                     <td><?php echo $featured; ?></td>
                                     <td><?php echo $active; ?></td>
                                     <td>
-                                        <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>" class="btn-secondary">Update Streat Food</a>
-                                        <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Streat Food</a>
+                                        <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>" class="btn-secondary">Update street Food</a>
+                                        <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete street Food</a>
                                     </td>
                                 </tr>
 

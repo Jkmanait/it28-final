@@ -2,7 +2,7 @@
 
 <div class="main-content">
     <div class="wrapper">
-        <h1>Add Streat Food</h1>
+        <h1>Add street Food</h1>
 
         <br><br>
 
@@ -21,14 +21,14 @@
                 <tr>
                     <td>Title: </td>
                     <td>
-                        <input type="text" name="title" placeholder="Title of the Streat Food">
+                        <input type="text" name="title" placeholder="Title of the street Food">
                     </td>
                 </tr>
 
                 <tr>
                     <td>Description: </td>
                     <td>
-                        <textarea name="description" cols="30" rows="5" placeholder="Description of the Streat Food."></textarea>
+                        <textarea name="description" cols="30" rows="5" placeholder="Description of the street Food."></textarea>
                     </td>
                 </tr>
 
@@ -66,7 +66,7 @@
 
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" value="Add Streat Food" class="btn-secondary">
+                        <input type="submit" name="submit" value="Add street Food" class="btn-secondary">
                     </td>
                 </tr>
 
@@ -124,7 +124,7 @@
                         $ext = end(explode('.', $image_name));
 
                         // Create New Name for Image
-                        $image_name = "Food-Name-".rand(0000,9999).".".$ext; //New Image Name May Be "Food-Name-657.jpg"
+                        // $image_name = "".rand(0000,9999).".".$ext; //New Image Name May Be "Food-Name-657.jpg"
 
                         //B. Upload the Image
                         //Get the Src Path and DEstinaton path
@@ -179,13 +179,13 @@
                 if($res2 == true)
                 {
                     //Data inserted Successfullly
-                    $_SESSION['add'] = "<div class='success'>Streat Food Added Successfully.</div>";
+                    $_SESSION['add'] = "<div class='success'>street Food Added Successfully.</div>";
                     header('location:'.SITEURL.'admin/manage-food.php');
                 }
                 else
                 {
                     //FAiled to Insert Data
-                    $_SESSION['add'] = "<div class='error'>Failed to Add Streat Food.</div>";
+                    $_SESSION['add'] = "<div class='error'>Failed to Add street Food.</div>";
                     header('location:'.SITEURL.'admin/manage-food.php');
                 }
 

@@ -37,11 +37,11 @@
 }
 
 a{
-    color: #e84118;
+    color: #E74C3C;
     text-decoration: none;
 }
 a:hover{
-    color: #c23616;
+    color: #E74C3C;
 }
 
 .btn{
@@ -52,15 +52,15 @@ a:hover{
 }
 .btn-primary{
     background-color: #e84118;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 .btn-primary:hover{
-    color: white;
+    color: rgb(49, 49, 49);
     background-color: #c23616;
 }
 h2{
-    color: #ffffff;
+    color: #000000;
     font-size: 2rem;
     margin-bottom: 2%;
 }
@@ -76,7 +76,7 @@ h3{
     left: 40%;
 }
 fieldset{
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(235, 235, 235);
     margin: 5%;
     padding: 3%;
     border-radius: 5px;
@@ -135,7 +135,7 @@ fieldset{
 
 /* CSS for Food Menu */
 .food-menu{
-    background-color: #ececec;
+    background-color: #adadad;
     padding: 4% 0;
 }
 .food-menu-box{
@@ -143,7 +143,7 @@ fieldset{
     margin: 1%;
     padding: 2%;
     float: left;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
 }
 

@@ -47,7 +47,7 @@
 
             <form action="" method="POST" class="order">
                 <fieldset>
-                    <legend class="text-center text-white">Selected Streat Food</legend>
+                    <legend class="text-center text-white">Selected street Food</legend>
 
                     <div class="food-menu-img">
                         <?php 
@@ -62,7 +62,7 @@
                             {
                                 //Image is Available
                                 ?>
-                                <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" alt="Streat Food" class="img-responsive img-curve">
+                                <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" alt="street Food" class="img-responsive img-curve">
                                 <?php
                             }
                         

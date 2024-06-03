@@ -5,7 +5,7 @@
         <div class="container">
             
             <form action="<?php echo SITEURL; ?>food-search.php" method="POST">
-                <input type="search" name="search" placeholder="Search for Streat Food.." required>
+                <input type="search" name="search" placeholder="Search for street Food.." required>
                 <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
 
@@ -30,7 +30,7 @@
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu">
         <div class="container">
-            <h2 class="text-center">Streat Food Menu</h2>
+            <h2 class="text-center">Street Food Menu</h2>
 
             <?php 
             
@@ -71,7 +71,7 @@
                                 {
                                     //Image Available
                                     ?>
-                                    <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" alt="Streat Food" class="img-responsive img-curve">
+                                    <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" alt="Street Food" class="img-responsive img-curve">
                                     <?php
                                 }
                             ?>
@@ -96,7 +96,7 @@
             else
             {
                 //Food Not Available 
-                echo "<div class='error'>Streat Food not available.</div>";
+                echo "<div class='error'>street Food not available.</div>";
             }
             
             ?>
@@ -113,7 +113,7 @@
         </div>
 
         <p class="text-center">
-            <a href="#">See All Streat Foods</a>
+            <a href="#">See All street Foods</a>
         </p>
     </section>
     <!-- fOOD Menu Section Ends Here -->

@@ -8,7 +8,7 @@
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu">
         <div class="container">
-            <h2 class="text-center">Streat Food Menu</h2>
+            <h2 class="text-center">street Food Menu</h2>
 
             <?php 
                 //Display Foods that are Active
@@ -47,7 +47,7 @@
                                     {
                                         //Image Available
                                         ?>
-                                        <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" alt="Streat Foods" class="img-responsive img-curve">
+                                        <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" alt="street Foods" class="img-responsive img-curve">
                                         <?php
                                     }
                                 ?>
