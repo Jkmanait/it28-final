@@ -60,7 +60,7 @@ a:hover{
     background-color: #c23616;
 }
 h2{
-    color: #2f3542;
+    color: #ffffff;
     font-size: 2rem;
     margin-bottom: 2%;
 }
@@ -76,7 +76,7 @@ h3{
     left: 40%;
 }
 fieldset{
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     margin: 5%;
     padding: 3%;
     border-radius: 5px;
@@ -116,6 +116,7 @@ fieldset{
 
 .food-search{
     background-image: url(../images/bg.jpg);
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -130,17 +131,6 @@ fieldset{
     border-radius: 5px;
 }
 
-
-/* CSS for Categories */
-.categories{
-    padding: 4% 0;
-}
-
-.box-3{
-    width: 28%;
-    float: left;
-    margin: 2%;
-}
 
 
 /* CSS for Food Menu */
@@ -174,7 +164,7 @@ fieldset{
 }
 .food-detail{
     font-size: 1rem;
-    color: #747d8c;
+    color: #ffffff;
 }
 
 

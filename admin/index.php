@@ -15,21 +15,7 @@
                 ?>
                 <br><br>
 
-                <div class="col-4 text-center">
-
-                    <?php 
-                        //Sql Query 
-                        $sql = "SELECT * FROM tbl_category";
-                        //Execute Query
-                        $res = mysqli_query($conn, $sql);
-                        //Count Rows
-                        $count = mysqli_num_rows($res);
-                    ?>
-
-                    <h1><?php echo $count; ?></h1>
-                    <br />
-                    Categories
-                </div>
+                
 
                 <div class="col-4 text-center">
 
@@ -44,7 +30,7 @@
 
                     <h1><?php echo $count2; ?></h1>
                     <br />
-                    Foods
+                    Streat Foods
                 </div>
 
                 <div class="col-4 text-center">
@@ -81,7 +67,7 @@
 
                     ?>
 
-                    <h1>$<?php echo $total_revenue; ?></h1>
+                    <h1>₱<?php echo $total_revenue; ?></h1>
                     <br />
                     Revenue Generated
                 </div>

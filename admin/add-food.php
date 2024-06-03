@@ -2,7 +2,7 @@
 
 <div class="main-content">
     <div class="wrapper">
-        <h1>Add Food</h1>
+        <h1>Add Streat Food</h1>
 
         <br><br>
 
@@ -21,14 +21,14 @@
                 <tr>
                     <td>Title: </td>
                     <td>
-                        <input type="text" name="title" placeholder="Title of the Food">
+                        <input type="text" name="title" placeholder="Title of the Streat Food">
                     </td>
                 </tr>
 
                 <tr>
                     <td>Description: </td>
                     <td>
-                        <textarea name="description" cols="30" rows="5" placeholder="Description of the Food."></textarea>
+                        <textarea name="description" cols="30" rows="5" placeholder="Description of the Streat Food."></textarea>
                     </td>
                 </tr>
 
@@ -46,54 +46,7 @@
                     </td>
                 </tr>
 
-                <tr>
-                    <td>Category: </td>
-                    <td>
-                        <select name="category">
-
-                            <?php 
-                                //Create PHP Code to display categories from Database
-                                //1. CReate SQL to get all active categories from database
-                                $sql = "SELECT * FROM tbl_category WHERE active='Yes'";
-                                
-                                //Executing qUery
-                                $res = mysqli_query($conn, $sql);
-
-                                //Count Rows to check whether we have categories or not
-                                $count = mysqli_num_rows($res);
-
-                                //IF count is greater than zero, we have categories else we donot have categories
-                                if($count>0)
-                                {
-                                    //WE have categories
-                                    while($row=mysqli_fetch_assoc($res))
-                                    {
-                                        //get the details of categories
-                                        $id = $row['id'];
-                                        $title = $row['title'];
-
-                                        ?>
-
-                                        <option value="<?php echo $id; ?>"><?php echo $title; ?></option>
-
-                                        <?php
-                                    }
-                                }
-                                else
-                                {
-                                    //WE do not have category
-                                    ?>
-                                    <option value="0">No Category Found</option>
-                                    <?php
-                                }
-                            
-
-                                //2. Display on Drpopdown
-                            ?>
-
-                        </select>
-                    </td>
-                </tr>
+                
 
                 <tr>
                     <td>Featured: </td>
@@ -113,7 +66,7 @@
 
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" value="Add Food" class="btn-secondary">
+                        <input type="submit" name="submit" value="Add Streat Food" class="btn-secondary">
                     </td>
                 </tr>
 
@@ -134,7 +87,7 @@
                 $title = $_POST['title'];
                 $description = $_POST['description'];
                 $price = $_POST['price'];
-                $category = $_POST['category'];
+                
 
                 //Check whether radion button for featured and active are checked or not
                 if(isset($_POST['featured']))
@@ -167,7 +120,7 @@
                     {
                         // Image is SElected
                         //A. REnamge the Image
-                        //Get the extension of selected image (jpg, png, gif, etc.) "vijay-thapa.jpg" vijay-thapa jpg
+                        //Get the extension of selected image (jpg, png, gif, etc.) 
                         $ext = end(explode('.', $image_name));
 
                         // Create New Name for Image
@@ -213,7 +166,7 @@
                     description = '$description',
                     price = $price,
                     image_name = '$image_name',
-                    category_id = $category,
+                    
                     featured = '$featured',
                     active = '$active'
                 ";
@@ -226,13 +179,13 @@
                 if($res2 == true)
                 {
                     //Data inserted Successfullly
-                    $_SESSION['add'] = "<div class='success'>Food Added Successfully.</div>";
+                    $_SESSION['add'] = "<div class='success'>Streat Food Added Successfully.</div>";
                     header('location:'.SITEURL.'admin/manage-food.php');
                 }
                 else
                 {
                     //FAiled to Insert Data
-                    $_SESSION['add'] = "<div class='error'>Failed to Add Food.</div>";
+                    $_SESSION['add'] = "<div class='error'>Failed to Add Streat Food.</div>";
                     header('location:'.SITEURL.'admin/manage-food.php');
                 }
 
